@@ -1,17 +1,18 @@
-# spark-docker
+# SparkStandAlone
 
-Use `docker-compose` to create a Spark standalone cluster on a single host. The following nodes are created:
+Este repositório possui a finalidade de ser um material de estudo, desenvolvendo um cluster do spark de uma forma simples 
 
-- 1 master
-- 1 worker
-- 1 history server
-- 1 jupyter notebook server
+## Como Usar
 
-To start the cluster execute the following command:
+- Clone o repositório:
+    - git clone https://github.com/victor-s-santos/SparkStandAlone
 
-`$ docker-compose up`
+- Build a imagem:
+    - docker-compose up --build
 
-The different components can be accessed at the following URLs:
+-----------------------------------
+
+Desta forma, será criado um cluster Spark standalone de um único host. Os seguintes nodes serão criados, e podem ser acessados como segue abaixo:
 
 Component | URL
 ---|---
@@ -20,6 +21,4 @@ Worker | http://localhost:8081/
 History server | http://localhost:18080/
 Jupyter notebook server | http://localhost:8888/
 
-To shutdown the cluster execute the following command:
-
-`$ docker-compose down`
+Então, acessando o endereço reference a `Jupyter notebook server`, podemos criar os notebooks para usar o spark. 
